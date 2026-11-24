@@ -341,8 +341,8 @@ def draw():
     ly = 468
     for tag, col, head, body, icon in stories[:3]:
         cv.frame(24, ly, 476, 130, INK, 2)
-        icon(cv, 32, ly + 29, 72)
-        tx = 120
+        icon(cv, 32, ly + 37, 56)
+        tx = 124
         cv.text(tx, ly + 10, tag, 2, col)
         nh = cv.block(tx, ly + 30, head, 3, INK, 360, 21)
         cv.block(tx, ly + 30 + nh * 21 + 6, body, 2, INK, 360, 17,
